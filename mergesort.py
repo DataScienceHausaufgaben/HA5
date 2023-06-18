@@ -50,14 +50,18 @@ def merge(left ,right):
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 
 # Visualisierung der unsortierten Liste
-x = range(len(my_list))
-plt.plot(x, my_list)
-plt.show()
+plt.subplot(2, 1, 1)
+plt.bar(range(len(my_list)), my_list)
+plt.title('Unsorted List')
 
 # Sortieren
 my_list = mergeSort(my_list)
 
 # Visualiserung der sortierten Liste
-x = range(len(my_list))
-plt.plot(x, my_list)
+plt.subplot(2, 1, 2)
+plt.bar(range(len(my_list)), my_list)
+plt.title('Sorted List')
+
+# Plotten
+plt.tight_layout()
 plt.show()
