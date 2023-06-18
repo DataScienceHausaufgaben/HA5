@@ -63,5 +63,4 @@ plt.bar(range(len(my_list)), my_list)
 plt.title('Sorted List')
 
 # Plotten
-plt.tight_layout()
 plt.show()
